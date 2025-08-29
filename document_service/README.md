@@ -30,14 +30,14 @@ document_service/
 
 - Python 3.9 or higher
 - Tesseract OCR (required for text extraction from images)
-- PostgreSQL (optional, SQLite is configured by default)
+- SQLite is configured by default
 
 ### Installation
 
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/build-with-sandeep/OCR-service.git
 cd document_service
 ```
 
@@ -46,7 +46,6 @@ cd document_service
 ```bash
 python -m venv venv
 .\venv\Scripts\activate  # Windows
-source venv/bin/activate  # Linux/MacOS
 ```
 
 3. Install dependencies:
@@ -126,7 +125,6 @@ The API will be available at `http://localhost:8000/`
 - **Method**: `DELETE`
 - **Response**: Confirmation of document deletion
 
-
 ## File Storage
 
 Uploaded files are stored in the `media/uploads/` directory, organized by file type:
@@ -146,9 +144,3 @@ The API returns appropriate HTTP status codes:
 - `400`: Bad Request
 - `404`: Not Found
 - `500`: Internal Server Error
-
-## Security Considerations
-
-- The API implements CORS headers for cross-origin requests
-- File size limits and type validation are enforced
-- Unique UUIDs are used for file identification

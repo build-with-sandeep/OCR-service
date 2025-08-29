@@ -1,6 +1,6 @@
 # Document Service API
 
-A Django-based REST API service for document management, supporting various file formats including PDF, DOCX, images (JPG/PNG), and text files.
+A Django-based REST API service for OCR extraction management, supporting various file formats including PDF, DOCX, images (JPG/PNG), and text files.
 
 ## Project Structure
 
